@@ -1,0 +1,12 @@
+.TodoMain {
+	margin-top: 50px;
+	margin-left: 20px;
+	border: 1px solid;
+	height: 500px;
+	width: 500px;
+	background-color: #dbd7e8;
+}
+
+.title {
+	margin-left: 20px;
+}

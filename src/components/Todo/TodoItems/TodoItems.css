@@ -1,0 +1,18 @@
+.main {
+	overflow: scroll;
+	border: 1px solid;
+	/* position: fixed; */
+	width: 350px;
+	height: 300px;
+	margin-left: 40px;
+}
+
+.listItem {
+	list-style-type: none;
+	color: #413f48;
+}
+
+.listItem:hover {
+	cursor: pointer;
+	color: #827e91
+}

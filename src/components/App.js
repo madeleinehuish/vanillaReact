@@ -1,28 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route } from 'react-router-dom';
+import Header from './Header/Header';
+import TodoMain from './Todo/TodoMain';
+import ColorTest from './ColorTest/ColorTest';
+import Aux from './Aux/Aux';
 import styles from './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	render() {
+		return (
+			<BrowserRouter>
+				<Aux>
+					<Header />
+					<Route path="/" exact component={TodoMain}/>
+					<Route path="/class_test" exact component={ColorTest}/>
+				</Aux>
+
+				{/* <div className={styles.App}>
+					<Header />
+					<div className={styles.container}>
+						<div className={styles.column}>
+							<TodoMain/>
+						</div>
+						<div className={styles.column}>
+							<ColorTest />
+						</div>
+					</div>
+				</div> */}
+			</BrowserRouter>
+		)
+	}
 }
 
 export default App;
