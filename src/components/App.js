@@ -15,18 +15,6 @@ class App extends Component {
 					<Route path="/" exact component={TodoMain}/>
 					<Route path="/class_test" exact component={ColorTest}/>
 				</Aux>
-
-				{/* <div className={styles.App}>
-					<Header />
-					<div className={styles.container}>
-						<div className={styles.column}>
-							<TodoMain/>
-						</div>
-						<div className={styles.column}>
-							<ColorTest />
-						</div>
-					</div>
-				</div> */}
 			</BrowserRouter>
 		)
 	}
