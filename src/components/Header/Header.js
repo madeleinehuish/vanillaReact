@@ -4,9 +4,9 @@ import styles from './Header.css';
 
 
 class Header extends Component {
-	state = {
-		name: ''
-	}
+	// state = {
+	// 	name: ''
+	// }
 
 	render() {
 		return (

@@ -4,14 +4,12 @@ import TodoItems from './TodoItems/TodoItems';
 import styles from './TodoMain.css';
 
 class TodoMain extends Component {
-  constructor() {
-    super();
-    this.state = {
-      items: [],
-      currentItem: {
-        text: '',
-        key: ''
-      }
+
+  state = {
+    items: [],
+    currentItem: {
+      text: '',
+      key: ''
     }
   }
 
